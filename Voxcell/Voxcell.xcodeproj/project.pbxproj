@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF6B97302823904000B06980 /* DepthPeelerShadersString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B972F2823904000B06980 /* DepthPeelerShadersString.swift */; };
+		EF6E0C5C2823301500E5D6BC /* Voxcell.docc in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C5B2823301500E5D6BC /* Voxcell.docc */; };
+		EF6E0C682823301600E5D6BC /* Voxcell.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0C5A2823301500E5D6BC /* Voxcell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF6E0C7C28233A8400E5D6BC /* GridInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C7328233A8400E5D6BC /* GridInfo.swift */; };
+		EF6E0C7D28233A8400E5D6BC /* DepthPeelerSwiftTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C7428233A8400E5D6BC /* DepthPeelerSwiftTypes.swift */; };
+		EF6E0C7E28233A8400E5D6BC /* DepthPeelerShadersTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0C7528233A8400E5D6BC /* DepthPeelerShadersTypes.h */; };
+		EF6E0C7F28233A8400E5D6BC /* QuadGenerationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C7628233A8400E5D6BC /* QuadGenerationHelper.swift */; };
+		EF6E0C8028233A8400E5D6BC /* VolumeBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C7728233A8400E5D6BC /* VolumeBitmap.swift */; };
+		EF6E0C8128233A8400E5D6BC /* DepthPeeler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C7828233A8400E5D6BC /* DepthPeeler.swift */; };
+		EF6E0C8228233A8400E5D6BC /* VolumeSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C7928233A8400E5D6BC /* VolumeSampler.swift */; };
+		EF6E0C8328233A8400E5D6BC /* DepthPeelerShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C7A28233A8400E5D6BC /* DepthPeelerShaders.metal */; };
+		EF6E0C8428233A8400E5D6BC /* VolumeSamplerExtensionColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C7B28233A8400E5D6BC /* VolumeSamplerExtensionColorPicker.swift */; };
+		EF6E0C8B28233ACA00E5D6BC /* Brep.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C8528233AC900E5D6BC /* Brep.swift */; };
+		EF6E0C8C28233ACA00E5D6BC /* BrepMDLMeshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C8628233AC900E5D6BC /* BrepMDLMeshExtension.swift */; };
+		EF6E0C8D28233ACA00E5D6BC /* BrepConvexHullExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C8728233AC900E5D6BC /* BrepConvexHullExtension.swift */; };
+		EF6E0C8E28233ACA00E5D6BC /* BrepCppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C8828233AC900E5D6BC /* BrepCppExtension.swift */; };
+		EF6E0C8F28233ACA00E5D6BC /* MultiLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C8928233AC900E5D6BC /* MultiLinks.swift */; };
+		EF6E0C9028233ACA00E5D6BC /* BrepOrientedBoundingBoxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C8A28233ACA00E5D6BC /* BrepOrientedBoundingBoxExtension.swift */; };
+		EF6E0C9128233AEF00E5D6BC /* Brep.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C8528233AC900E5D6BC /* Brep.swift */; };
+		EF6E0C9228233AF300E5D6BC /* MultiLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C8928233AC900E5D6BC /* MultiLinks.swift */; };
+		EF6E0C9528233B0900E5D6BC /* BrepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C9328233B0900E5D6BC /* BrepTests.swift */; };
+		EF6E0C9628233B0900E5D6BC /* MultiLinksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C9428233B0900E5D6BC /* MultiLinksTests.swift */; };
+		EF6E0C9C28233B5D00E5D6BC /* manifold_objc.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C9828233B5D00E5D6BC /* manifold_objc.mm */; };
+		EF6E0C9D28233B5D00E5D6BC /* primitives_objc.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0C9928233B5D00E5D6BC /* primitives_objc.mm */; };
+		EF6E0C9E28233B5D00E5D6BC /* manifold_objc.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0C9A28233B5D00E5D6BC /* manifold_objc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF6E0C9F28233B5D00E5D6BC /* primitives_objc.h in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0C9B28233B5D00E5D6BC /* primitives_objc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF6E0CB128233B8300E5D6BC /* base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CA128233B8200E5D6BC /* base.cpp */; };
+		EF6E0CB228233B8300E5D6BC /* manifold_convex_hull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CA228233B8200E5D6BC /* manifold_convex_hull.cpp */; };
+		EF6E0CB328233B8300E5D6BC /* manifold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CA328233B8200E5D6BC /* manifold.cpp */; };
+		EF6E0CB428233B8300E5D6BC /* orienting_bounding_box.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0CA428233B8200E5D6BC /* orienting_bounding_box.hpp */; };
+		EF6E0CB528233B8300E5D6BC /* di_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CA528233B8200E5D6BC /* di_base.cpp */; };
+		EF6E0CB628233B8300E5D6BC /* base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0CA628233B8200E5D6BC /* base.hpp */; };
+		EF6E0CB728233B8300E5D6BC /* orienting_bounding_box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CA728233B8200E5D6BC /* orienting_bounding_box.cpp */; };
+		EF6E0CB828233B8300E5D6BC /* loggable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0CA828233B8200E5D6BC /* loggable.hpp */; };
+		EF6E0CB928233B8300E5D6BC /* manifold.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0CA928233B8300E5D6BC /* manifold.hpp */; };
+		EF6E0CBA28233B8300E5D6BC /* convex_hull_2d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0CAA28233B8300E5D6BC /* convex_hull_2d.hpp */; };
+		EF6E0CBB28233B8300E5D6BC /* convex_hull_2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CAB28233B8300E5D6BC /* convex_hull_2d.cpp */; };
+		EF6E0CBC28233B8300E5D6BC /* primitives.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0CAC28233B8300E5D6BC /* primitives.hpp */; };
+		EF6E0CBD28233B8300E5D6BC /* quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CAD28233B8300E5D6BC /* quaternion.cpp */; };
+		EF6E0CBE28233B8300E5D6BC /* di_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0CAE28233B8300E5D6BC /* di_base.hpp */; };
+		EF6E0CBF28233B8300E5D6BC /* primitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CAF28233B8300E5D6BC /* primitives.cpp */; };
+		EF6E0CC028233B8300E5D6BC /* quaternion.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EF6E0CB028233B8300E5D6BC /* quaternion.hpp */; };
+		EF6E0CC328233D4400E5D6BC /* ExtractedCoordinatesFromMTKMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CC228233D4400E5D6BC /* ExtractedCoordinatesFromMTKMesh.swift */; };
+		EF6E0CC528233DA300E5D6BC /* StructureOfArraysForMDLMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CC428233DA300E5D6BC /* StructureOfArraysForMDLMesh.swift */; };
+		EF6E0CC728233DD900E5D6BC /* ExtractedAttributesFromMDLVertexDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CC628233DD900E5D6BC /* ExtractedAttributesFromMDLVertexDescriptor.swift */; };
+		EF6E0CC928233E1A00E5D6BC /* MDLMeshExtensionGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E0CC828233E1A00E5D6BC /* MDLMeshExtensionGeneration.swift */; };
+		EF6E0CCE28233EA700E5D6BC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6E0CCD28233EA700E5D6BC /* Accelerate.framework */; };
+		EF6E0CD028233EB000E5D6BC /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6E0CCF28233EB000E5D6BC /* Metal.framework */; };
+		EF6E0CD228233EB800E5D6BC /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6E0CD128233EB800E5D6BC /* MetalPerformanceShaders.framework */; };
+		EF751B632823550D0061FDDE /* GeomPrimitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF751B622823550D0061FDDE /* GeomPrimitives.swift */; };
+		EF751B65282355A40061FDDE /* RenderUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF751B64282355A40061FDDE /* RenderUtil.swift */; };
+		EF751B672823564F0061FDDE /* MTKMeshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF751B662823564F0061FDDE /* MTKMeshExtension.swift */; };
+		EF751B69282356670061FDDE /* FloatUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF751B68282356670061FDDE /* FloatUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF6E0C632823301600E5D6BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF6E0C4E2823301500E5D6BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6E0C562823301500E5D6BC;
+			remoteInfo = Voxcell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF6B972F2823904000B06980 /* DepthPeelerShadersString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthPeelerShadersString.swift; sourceTree = "<group>"; };
+		EF6E0C572823301500E5D6BC /* Voxcell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Voxcell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6E0C5A2823301500E5D6BC /* Voxcell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Voxcell.h; sourceTree = "<group>"; };
+		EF6E0C5B2823301500E5D6BC /* Voxcell.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Voxcell.docc; sourceTree = "<group>"; };
+		EF6E0C612823301600E5D6BC /* VoxcellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoxcellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6E0C7328233A8400E5D6BC /* GridInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridInfo.swift; sourceTree = "<group>"; };
+		EF6E0C7428233A8400E5D6BC /* DepthPeelerSwiftTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthPeelerSwiftTypes.swift; sourceTree = "<group>"; };
+		EF6E0C7528233A8400E5D6BC /* DepthPeelerShadersTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthPeelerShadersTypes.h; sourceTree = "<group>"; };
+		EF6E0C7628233A8400E5D6BC /* QuadGenerationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadGenerationHelper.swift; sourceTree = "<group>"; };
+		EF6E0C7728233A8400E5D6BC /* VolumeBitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeBitmap.swift; sourceTree = "<group>"; };
+		EF6E0C7828233A8400E5D6BC /* DepthPeeler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthPeeler.swift; sourceTree = "<group>"; };
+		EF6E0C7928233A8400E5D6BC /* VolumeSampler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeSampler.swift; sourceTree = "<group>"; };
+		EF6E0C7A28233A8400E5D6BC /* DepthPeelerShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = DepthPeelerShaders.metal; sourceTree = "<group>"; };
+		EF6E0C7B28233A8400E5D6BC /* VolumeSamplerExtensionColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeSamplerExtensionColorPicker.swift; sourceTree = "<group>"; };
+		EF6E0C8528233AC900E5D6BC /* Brep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brep.swift; sourceTree = "<group>"; };
+		EF6E0C8628233AC900E5D6BC /* BrepMDLMeshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrepMDLMeshExtension.swift; sourceTree = "<group>"; };
+		EF6E0C8728233AC900E5D6BC /* BrepConvexHullExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrepConvexHullExtension.swift; sourceTree = "<group>"; };
+		EF6E0C8828233AC900E5D6BC /* BrepCppExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrepCppExtension.swift; sourceTree = "<group>"; };
+		EF6E0C8928233AC900E5D6BC /* MultiLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLinks.swift; sourceTree = "<group>"; };
+		EF6E0C8A28233ACA00E5D6BC /* BrepOrientedBoundingBoxExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrepOrientedBoundingBoxExtension.swift; sourceTree = "<group>"; };
+		EF6E0C9328233B0900E5D6BC /* BrepTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrepTests.swift; sourceTree = "<group>"; };
+		EF6E0C9428233B0900E5D6BC /* MultiLinksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLinksTests.swift; sourceTree = "<group>"; };
+		EF6E0C9828233B5D00E5D6BC /* manifold_objc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = manifold_objc.mm; sourceTree = "<group>"; };
+		EF6E0C9928233B5D00E5D6BC /* primitives_objc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = primitives_objc.mm; sourceTree = "<group>"; };
+		EF6E0C9A28233B5D00E5D6BC /* manifold_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = manifold_objc.h; sourceTree = "<group>"; };
+		EF6E0C9B28233B5D00E5D6BC /* primitives_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primitives_objc.h; sourceTree = "<group>"; };
+		EF6E0CA128233B8200E5D6BC /* base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base.cpp; sourceTree = "<group>"; };
+		EF6E0CA228233B8200E5D6BC /* manifold_convex_hull.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = manifold_convex_hull.cpp; sourceTree = "<group>"; };
+		EF6E0CA328233B8200E5D6BC /* manifold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = manifold.cpp; sourceTree = "<group>"; };
+		EF6E0CA428233B8200E5D6BC /* orienting_bounding_box.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = orienting_bounding_box.hpp; sourceTree = "<group>"; };
+		EF6E0CA528233B8200E5D6BC /* di_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = di_base.cpp; sourceTree = "<group>"; };
+		EF6E0CA628233B8200E5D6BC /* base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base.hpp; sourceTree = "<group>"; };
+		EF6E0CA728233B8200E5D6BC /* orienting_bounding_box.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = orienting_bounding_box.cpp; sourceTree = "<group>"; };
+		EF6E0CA828233B8200E5D6BC /* loggable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = loggable.hpp; sourceTree = "<group>"; };
+		EF6E0CA928233B8300E5D6BC /* manifold.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = manifold.hpp; sourceTree = "<group>"; };
+		EF6E0CAA28233B8300E5D6BC /* convex_hull_2d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = convex_hull_2d.hpp; sourceTree = "<group>"; };
+		EF6E0CAB28233B8300E5D6BC /* convex_hull_2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convex_hull_2d.cpp; sourceTree = "<group>"; };
+		EF6E0CAC28233B8300E5D6BC /* primitives.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = primitives.hpp; sourceTree = "<group>"; };
+		EF6E0CAD28233B8300E5D6BC /* quaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quaternion.cpp; sourceTree = "<group>"; };
+		EF6E0CAE28233B8300E5D6BC /* di_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = di_base.hpp; sourceTree = "<group>"; };
+		EF6E0CAF28233B8300E5D6BC /* primitives.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = primitives.cpp; sourceTree = "<group>"; };
+		EF6E0CB028233B8300E5D6BC /* quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quaternion.hpp; sourceTree = "<group>"; };
+		EF6E0CC228233D4400E5D6BC /* ExtractedCoordinatesFromMTKMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractedCoordinatesFromMTKMesh.swift; sourceTree = "<group>"; };
+		EF6E0CC428233DA300E5D6BC /* StructureOfArraysForMDLMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructureOfArraysForMDLMesh.swift; sourceTree = "<group>"; };
+		EF6E0CC628233DD900E5D6BC /* ExtractedAttributesFromMDLVertexDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractedAttributesFromMDLVertexDescriptor.swift; sourceTree = "<group>"; };
+		EF6E0CC828233E1A00E5D6BC /* MDLMeshExtensionGeneration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDLMeshExtensionGeneration.swift; sourceTree = "<group>"; };
+		EF6E0CCD28233EA700E5D6BC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		EF6E0CCF28233EB000E5D6BC /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		EF6E0CD128233EB800E5D6BC /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = DEVELOPER_DIR; };
+		EF751B622823550D0061FDDE /* GeomPrimitives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeomPrimitives.swift; sourceTree = "<group>"; };
+		EF751B64282355A40061FDDE /* RenderUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderUtil.swift; sourceTree = "<group>"; };
+		EF751B662823564F0061FDDE /* MTKMeshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTKMeshExtension.swift; sourceTree = "<group>"; };
+		EF751B68282356670061FDDE /* FloatUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF6E0C542823301500E5D6BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6E0CD028233EB000E5D6BC /* Metal.framework in Frameworks */,
+				EF6E0CD228233EB800E5D6BC /* MetalPerformanceShaders.framework in Frameworks */,
+				EF6E0CCE28233EA700E5D6BC /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6E0C5E2823301600E5D6BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF6E0C4D2823301500E5D6BC = {
+			isa = PBXGroup;
+			children = (
+				EF6E0C592823301500E5D6BC /* Voxcell */,
+				EF6E0C652823301600E5D6BC /* VoxcellTests */,
+				EF6E0C582823301500E5D6BC /* Products */,
+				EF6E0CCC28233EA600E5D6BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF6E0C582823301500E5D6BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF6E0C572823301500E5D6BC /* Voxcell.framework */,
+				EF6E0C612823301600E5D6BC /* VoxcellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF6E0C592823301500E5D6BC /* Voxcell */ = {
+			isa = PBXGroup;
+			children = (
+				EF751B61282354CC0061FDDE /* GeomPrimitives */,
+				EF6E0CC128233D1600E5D6BC /* Modeling */,
+				EF6E0CA028233B6300E5D6BC /* CppCode */,
+				EF6E0C9728233B3D00E5D6BC /* SwiftObjcCppInterface */,
+				EF6E0C7128233A4300E5D6BC /* VolumeSampler */,
+				EF6E0C7228233A4D00E5D6BC /* Brep */,
+				EF6E0C5A2823301500E5D6BC /* Voxcell.h */,
+				EF6E0C5B2823301500E5D6BC /* Voxcell.docc */,
+			);
+			path = Voxcell;
+			sourceTree = "<group>";
+		};
+		EF6E0C652823301600E5D6BC /* VoxcellTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF6E0C9328233B0900E5D6BC /* BrepTests.swift */,
+				EF6E0C9428233B0900E5D6BC /* MultiLinksTests.swift */,
+			);
+			path = VoxcellTests;
+			sourceTree = "<group>";
+		};
+		EF6E0C7128233A4300E5D6BC /* VolumeSampler */ = {
+			isa = PBXGroup;
+			children = (
+				EF6E0C7828233A8400E5D6BC /* DepthPeeler.swift */,
+				EF6E0C7A28233A8400E5D6BC /* DepthPeelerShaders.metal */,
+				EF6E0C7528233A8400E5D6BC /* DepthPeelerShadersTypes.h */,
+				EF6E0C7428233A8400E5D6BC /* DepthPeelerSwiftTypes.swift */,
+				EF6E0C7328233A8400E5D6BC /* GridInfo.swift */,
+				EF6E0C7628233A8400E5D6BC /* QuadGenerationHelper.swift */,
+				EF6E0C7728233A8400E5D6BC /* VolumeBitmap.swift */,
+				EF6E0C7B28233A8400E5D6BC /* VolumeSamplerExtensionColorPicker.swift */,
+				EF6E0C7928233A8400E5D6BC /* VolumeSampler.swift */,
+				EF6B972F2823904000B06980 /* DepthPeelerShadersString.swift */,
+			);
+			path = VolumeSampler;
+			sourceTree = "<group>";
+		};
+		EF6E0C7228233A4D00E5D6BC /* Brep */ = {
+			isa = PBXGroup;
+			children = (
+				EF6E0C8528233AC900E5D6BC /* Brep.swift */,
+				EF6E0C8928233AC900E5D6BC /* MultiLinks.swift */,
+				EF6E0C8728233AC900E5D6BC /* BrepConvexHullExtension.swift */,
+				EF6E0C8828233AC900E5D6BC /* BrepCppExtension.swift */,
+				EF6E0C8628233AC900E5D6BC /* BrepMDLMeshExtension.swift */,
+				EF6E0C8A28233ACA00E5D6BC /* BrepOrientedBoundingBoxExtension.swift */,
+			);
+			path = Brep;
+			sourceTree = "<group>";
+		};
+		EF6E0C9728233B3D00E5D6BC /* SwiftObjcCppInterface */ = {
+			isa = PBXGroup;
+			children = (
+				EF6E0C9A28233B5D00E5D6BC /* manifold_objc.h */,
+				EF6E0C9B28233B5D00E5D6BC /* primitives_objc.h */,
+				EF6E0C9828233B5D00E5D6BC /* manifold_objc.mm */,
+				EF6E0C9928233B5D00E5D6BC /* primitives_objc.mm */,
+			);
+			path = SwiftObjcCppInterface;
+			sourceTree = "<group>";
+		};
+		EF6E0CA028233B6300E5D6BC /* CppCode */ = {
+			isa = PBXGroup;
+			children = (
+				EF6E0CA128233B8200E5D6BC /* base.cpp */,
+				EF6E0CA628233B8200E5D6BC /* base.hpp */,
+				EF6E0CAB28233B8300E5D6BC /* convex_hull_2d.cpp */,
+				EF6E0CAA28233B8300E5D6BC /* convex_hull_2d.hpp */,
+				EF6E0CA528233B8200E5D6BC /* di_base.cpp */,
+				EF6E0CAE28233B8300E5D6BC /* di_base.hpp */,
+				EF6E0CA828233B8200E5D6BC /* loggable.hpp */,
+				EF6E0CA228233B8200E5D6BC /* manifold_convex_hull.cpp */,
+				EF6E0CA328233B8200E5D6BC /* manifold.cpp */,
+				EF6E0CA928233B8300E5D6BC /* manifold.hpp */,
+				EF6E0CA728233B8200E5D6BC /* orienting_bounding_box.cpp */,
+				EF6E0CA428233B8200E5D6BC /* orienting_bounding_box.hpp */,
+				EF6E0CAF28233B8300E5D6BC /* primitives.cpp */,
+				EF6E0CAC28233B8300E5D6BC /* primitives.hpp */,
+				EF6E0CAD28233B8300E5D6BC /* quaternion.cpp */,
+				EF6E0CB028233B8300E5D6BC /* quaternion.hpp */,
+			);
+			path = CppCode;
+			sourceTree = "<group>";
+		};
+		EF6E0CC128233D1600E5D6BC /* Modeling */ = {
+			isa = PBXGroup;
+			children = (
+				EF751B68282356670061FDDE /* FloatUtil.swift */,
+				EF751B662823564F0061FDDE /* MTKMeshExtension.swift */,
+				EF751B64282355A40061FDDE /* RenderUtil.swift */,
+				EF6E0CC828233E1A00E5D6BC /* MDLMeshExtensionGeneration.swift */,
+				EF6E0CC628233DD900E5D6BC /* ExtractedAttributesFromMDLVertexDescriptor.swift */,
+				EF6E0CC428233DA300E5D6BC /* StructureOfArraysForMDLMesh.swift */,
+				EF6E0CC228233D4400E5D6BC /* ExtractedCoordinatesFromMTKMesh.swift */,
+			);
+			path = Modeling;
+			sourceTree = "<group>";
+		};
+		EF6E0CCC28233EA600E5D6BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF6E0CD128233EB800E5D6BC /* MetalPerformanceShaders.framework */,
+				EF6E0CCF28233EB000E5D6BC /* Metal.framework */,
+				EF6E0CCD28233EA700E5D6BC /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF751B61282354CC0061FDDE /* GeomPrimitives */ = {
+			isa = PBXGroup;
+			children = (
+				EF751B622823550D0061FDDE /* GeomPrimitives.swift */,
+			);
+			path = GeomPrimitives;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EF6E0C522823301500E5D6BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6E0CB828233B8300E5D6BC /* loggable.hpp in Headers */,
+				EF6E0C9F28233B5D00E5D6BC /* primitives_objc.h in Headers */,
+				EF6E0CC028233B8300E5D6BC /* quaternion.hpp in Headers */,
+				EF6E0CBC28233B8300E5D6BC /* primitives.hpp in Headers */,
+				EF6E0C7E28233A8400E5D6BC /* DepthPeelerShadersTypes.h in Headers */,
+				EF6E0CB428233B8300E5D6BC /* orienting_bounding_box.hpp in Headers */,
+				EF6E0CB928233B8300E5D6BC /* manifold.hpp in Headers */,
+				EF6E0CB628233B8300E5D6BC /* base.hpp in Headers */,
+				EF6E0CBE28233B8300E5D6BC /* di_base.hpp in Headers */,
+				EF6E0CBA28233B8300E5D6BC /* convex_hull_2d.hpp in Headers */,
+				EF6E0C9E28233B5D00E5D6BC /* manifold_objc.h in Headers */,
+				EF6E0C682823301600E5D6BC /* Voxcell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EF6E0C562823301500E5D6BC /* Voxcell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6E0C6B2823301600E5D6BC /* Build configuration list for PBXNativeTarget "Voxcell" */;
+			buildPhases = (
+				EF6E0C522823301500E5D6BC /* Headers */,
+				EF6E0C532823301500E5D6BC /* Sources */,
+				EF6E0C542823301500E5D6BC /* Frameworks */,
+				EF6E0C552823301500E5D6BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voxcell;
+			productName = Voxcell;
+			productReference = EF6E0C572823301500E5D6BC /* Voxcell.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF6E0C602823301600E5D6BC /* VoxcellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6E0C6E2823301600E5D6BC /* Build configuration list for PBXNativeTarget "VoxcellTests" */;
+			buildPhases = (
+				EF6E0C5D2823301600E5D6BC /* Sources */,
+				EF6E0C5E2823301600E5D6BC /* Frameworks */,
+				EF6E0C5F2823301600E5D6BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6E0C642823301600E5D6BC /* PBXTargetDependency */,
+			);
+			name = VoxcellTests;
+			productName = VoxcellTests;
+			productReference = EF6E0C612823301600E5D6BC /* VoxcellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF6E0C4E2823301500E5D6BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					EF6E0C562823301500E5D6BC = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+					EF6E0C602823301600E5D6BC = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EF6E0C512823301500E5D6BC /* Build configuration list for PBXProject "Voxcell" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF6E0C4D2823301500E5D6BC;
+			productRefGroup = EF6E0C582823301500E5D6BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF6E0C562823301500E5D6BC /* Voxcell */,
+				EF6E0C602823301600E5D6BC /* VoxcellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF6E0C552823301500E5D6BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6E0C5F2823301600E5D6BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF6E0C532823301500E5D6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6E0C8B28233ACA00E5D6BC /* Brep.swift in Sources */,
+				EF6E0CC928233E1A00E5D6BC /* MDLMeshExtensionGeneration.swift in Sources */,
+				EF6B97302823904000B06980 /* DepthPeelerShadersString.swift in Sources */,
+				EF6E0C8F28233ACA00E5D6BC /* MultiLinks.swift in Sources */,
+				EF6E0CB128233B8300E5D6BC /* base.cpp in Sources */,
+				EF6E0CB328233B8300E5D6BC /* manifold.cpp in Sources */,
+				EF6E0C9028233ACA00E5D6BC /* BrepOrientedBoundingBoxExtension.swift in Sources */,
+				EF6E0CC528233DA300E5D6BC /* StructureOfArraysForMDLMesh.swift in Sources */,
+				EF751B672823564F0061FDDE /* MTKMeshExtension.swift in Sources */,
+				EF6E0C7F28233A8400E5D6BC /* QuadGenerationHelper.swift in Sources */,
+				EF751B65282355A40061FDDE /* RenderUtil.swift in Sources */,
+				EF6E0CB228233B8300E5D6BC /* manifold_convex_hull.cpp in Sources */,
+				EF6E0CC728233DD900E5D6BC /* ExtractedAttributesFromMDLVertexDescriptor.swift in Sources */,
+				EF6E0CB728233B8300E5D6BC /* orienting_bounding_box.cpp in Sources */,
+				EF6E0C8428233A8400E5D6BC /* VolumeSamplerExtensionColorPicker.swift in Sources */,
+				EF6E0C7D28233A8400E5D6BC /* DepthPeelerSwiftTypes.swift in Sources */,
+				EF6E0C8128233A8400E5D6BC /* DepthPeeler.swift in Sources */,
+				EF751B632823550D0061FDDE /* GeomPrimitives.swift in Sources */,
+				EF6E0C9D28233B5D00E5D6BC /* primitives_objc.mm in Sources */,
+				EF751B69282356670061FDDE /* FloatUtil.swift in Sources */,
+				EF6E0CBF28233B8300E5D6BC /* primitives.cpp in Sources */,
+				EF6E0C8C28233ACA00E5D6BC /* BrepMDLMeshExtension.swift in Sources */,
+				EF6E0CBD28233B8300E5D6BC /* quaternion.cpp in Sources */,
+				EF6E0CBB28233B8300E5D6BC /* convex_hull_2d.cpp in Sources */,
+				EF6E0CC328233D4400E5D6BC /* ExtractedCoordinatesFromMTKMesh.swift in Sources */,
+				EF6E0C5C2823301500E5D6BC /* Voxcell.docc in Sources */,
+				EF6E0C8E28233ACA00E5D6BC /* BrepCppExtension.swift in Sources */,
+				EF6E0C7C28233A8400E5D6BC /* GridInfo.swift in Sources */,
+				EF6E0C8328233A8400E5D6BC /* DepthPeelerShaders.metal in Sources */,
+				EF6E0CB528233B8300E5D6BC /* di_base.cpp in Sources */,
+				EF6E0C8228233A8400E5D6BC /* VolumeSampler.swift in Sources */,
+				EF6E0C8D28233ACA00E5D6BC /* BrepConvexHullExtension.swift in Sources */,
+				EF6E0C8028233A8400E5D6BC /* VolumeBitmap.swift in Sources */,
+				EF6E0C9C28233B5D00E5D6BC /* manifold_objc.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6E0C5D2823301600E5D6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6E0C9128233AEF00E5D6BC /* Brep.swift in Sources */,
+				EF6E0C9528233B0900E5D6BC /* BrepTests.swift in Sources */,
+				EF6E0C9228233AF300E5D6BC /* MultiLinks.swift in Sources */,
+				EF6E0C9628233B0900E5D6BC /* MultiLinksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF6E0C642823301600E5D6BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6E0C562823301500E5D6BC /* Voxcell */;
+			targetProxy = EF6E0C632823301600E5D6BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF6E0C692823301600E5D6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF6E0C6A2823301600E5D6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF6E0C6C2823301600E5D6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 64SMH392EJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = module.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoyamanishi.Voxcell;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF6E0C6D2823301600E5D6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 64SMH392EJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = module.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoyamanishi.Voxcell;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF6E0C6F2823301600E5D6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64SMH392EJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoyamanishi.VoxcellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF6E0C702823301600E5D6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64SMH392EJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoyamanishi.VoxcellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF6E0C512823301500E5D6BC /* Build configuration list for PBXProject "Voxcell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6E0C692823301600E5D6BC /* Debug */,
+				EF6E0C6A2823301600E5D6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6E0C6B2823301600E5D6BC /* Build configuration list for PBXNativeTarget "Voxcell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6E0C6C2823301600E5D6BC /* Debug */,
+				EF6E0C6D2823301600E5D6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6E0C6E2823301600E5D6BC /* Build configuration list for PBXNativeTarget "VoxcellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6E0C6F2823301600E5D6BC /* Debug */,
+				EF6E0C702823301600E5D6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF6E0C4E2823301500E5D6BC /* Project object */;
+}

@@ -1,0 +1,9 @@
+framework module Voxcell {
+    umbrella header "Voxcell.h"
+
+    header "primitives_objc.h"
+    header "manifold_objc.h"
+
+    export *
+    module * { export * }
+}
