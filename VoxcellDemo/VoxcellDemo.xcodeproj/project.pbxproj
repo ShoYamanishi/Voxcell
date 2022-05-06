@@ -51,8 +51,6 @@
 		EF6B970A2823865B00B06980 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6B97092823865A00B06980 /* Accelerate.framework */; };
 		EF6B970C2823866700B06980 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6B970B2823866700B06980 /* Metal.framework */; };
 		EF6B970E2823866F00B06980 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6B970D2823866F00B06980 /* MetalPerformanceShaders.framework */; };
-		EF6B971328238A2C00B06980 /* MDLMaterialExtensionTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B971228238A2C00B06980 /* MDLMaterialExtensionTexture.swift */; };
-		EF6B971428238A2C00B06980 /* MDLMaterialExtensionTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B971228238A2C00B06980 /* MDLMaterialExtensionTexture.swift */; };
 		EF6B971628238A6B00B06980 /* FloatUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B971528238A6B00B06980 /* FloatUtil.swift */; };
 		EF6B971728238A6B00B06980 /* FloatUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B971528238A6B00B06980 /* FloatUtil.swift */; };
 		EF6B971928238A8200B06980 /* StructureOfArraysForMDLMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B971828238A8200B06980 /* StructureOfArraysForMDLMesh.swift */; };
@@ -78,6 +76,8 @@
 		EF6B974F282488C100B06980 /* duck_smoothed.mtl in Resources */ = {isa = PBXBuildFile; fileRef = EF6B974C282488C100B06980 /* duck_smoothed.mtl */; };
 		EF6B9750282488C100B06980 /* duck_smoothed.obj in Resources */ = {isa = PBXBuildFile; fileRef = EF6B974D282488C100B06980 /* duck_smoothed.obj */; };
 		EF6B9751282488C100B06980 /* duck_smoothed.obj in Resources */ = {isa = PBXBuildFile; fileRef = EF6B974D282488C100B06980 /* duck_smoothed.obj */; };
+		EF6B975328249DE500B06980 /* MDLMaterialExtensionTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B975228249DE500B06980 /* MDLMaterialExtensionTexture.swift */; };
+		EF6B975428249DE500B06980 /* MDLMaterialExtensionTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B975228249DE500B06980 /* MDLMaterialExtensionTexture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -137,7 +137,6 @@
 		EF6B97092823865A00B06980 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		EF6B970B2823866700B06980 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
 		EF6B970D2823866F00B06980 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = DEVELOPER_DIR; };
-		EF6B971228238A2C00B06980 /* MDLMaterialExtensionTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MDLMaterialExtensionTexture.swift; path = ../../../../Voxell2/Voxell/Shared/Modeling/MDLMaterialExtensionTexture.swift; sourceTree = "<group>"; };
 		EF6B971528238A6B00B06980 /* FloatUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatUtil.swift; sourceTree = "<group>"; };
 		EF6B971828238A8200B06980 /* StructureOfArraysForMDLMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructureOfArraysForMDLMesh.swift; sourceTree = "<group>"; };
 		EF6B971B28238AB100B06980 /* ExtractedAttributesFromMDLVertexDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractedAttributesFromMDLVertexDescriptor.swift; sourceTree = "<group>"; };
@@ -150,6 +149,7 @@
 		EF6B974128239A6500B06980 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
 		EF6B974C282488C100B06980 /* duck_smoothed.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duck_smoothed.mtl; sourceTree = "<group>"; };
 		EF6B974D282488C100B06980 /* duck_smoothed.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duck_smoothed.obj; sourceTree = "<group>"; };
+		EF6B975228249DE500B06980 /* MDLMaterialExtensionTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDLMaterialExtensionTexture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,8 +296,8 @@
 				EF6B972728238C0300B06980 /* MTKMeshExtension.swift */,
 				EF6B972428238BCD00B06980 /* ExtractedCoordinatesFromMTKMesh.swift */,
 				EF6B971E28238AD400B06980 /* MDLVertexDescriptorExtension.swift */,
+				EF6B975228249DE500B06980 /* MDLMaterialExtensionTexture.swift */,
 				EF6B971B28238AB100B06980 /* ExtractedAttributesFromMDLVertexDescriptor.swift */,
-				EF6B971228238A2C00B06980 /* MDLMaterialExtensionTexture.swift */,
 				EF6B971528238A6B00B06980 /* FloatUtil.swift */,
 				EF6B971828238A8200B06980 /* StructureOfArraysForMDLMesh.swift */,
 				EF6B972128238B2F00B06980 /* MDLMeshExtensionGeneration.swift */,
@@ -432,13 +432,13 @@
 				EF6B96D4282384AE00B06980 /* RenderingPerModel.swift in Sources */,
 				EF6B972528238BCD00B06980 /* ExtractedCoordinatesFromMTKMesh.swift in Sources */,
 				EF6B972228238B2F00B06980 /* MDLMeshExtensionGeneration.swift in Sources */,
-				EF6B971328238A2C00B06980 /* MDLMaterialExtensionTexture.swift in Sources */,
 				EF6B96AA28236C6D00B06980 /* WorldManager.swift in Sources */,
 				EF6B96E0282384AE00B06980 /* RenderCoordinator.swift in Sources */,
 				EF6B972828238C0300B06980 /* MTKMeshExtension.swift in Sources */,
 				EF6B96E7282384F400B06980 /* LinesAndArrows.swift in Sources */,
 				EF6B96D2282384AE00B06980 /* RenderingPerScene.swift in Sources */,
 				EF6B971628238A6B00B06980 /* FloatUtil.swift in Sources */,
+				EF6B975328249DE500B06980 /* MDLMaterialExtensionTexture.swift in Sources */,
 				EF6B971F28238AD500B06980 /* MDLVertexDescriptorExtension.swift in Sources */,
 				EF6B96DE282384AE00B06980 /* RenderUtil.swift in Sources */,
 				EF6B96D0282384AE00B06980 /* TextureStorage.swift in Sources */,
@@ -464,8 +464,8 @@
 				EF6B96AB28236C6D00B06980 /* WorldManager.swift in Sources */,
 				EF6B96E1282384AE00B06980 /* RenderCoordinator.swift in Sources */,
 				EF6B9708282385CF00B06980 /* MetalView.swift in Sources */,
-				EF6B971428238A2C00B06980 /* MDLMaterialExtensionTexture.swift in Sources */,
 				EF6B96E8282384F400B06980 /* LinesAndArrows.swift in Sources */,
+				EF6B975428249DE500B06980 /* MDLMaterialExtensionTexture.swift in Sources */,
 				EF6B972028238AD500B06980 /* MDLVertexDescriptorExtension.swift in Sources */,
 				EF6B96D3282384AE00B06980 /* RenderingPerScene.swift in Sources */,
 				EF6B96DF282384AE00B06980 /* RenderUtil.swift in Sources */,
