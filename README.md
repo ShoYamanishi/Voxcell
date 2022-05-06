@@ -1,5 +1,5 @@
 # Voxcell
-A XCFramework for iOS and macOS to generate voxel, convex hull, etc. from MDLMesh
+A Framework for iOS and macOS to generate voxel, convex hull, etc. from MDLMesh
 
 <a href="figs/moo_org.PNG" ><img src="figs/moo_org.PNG" width="100"></a>
 <a href="figs/moo_voxel_01.PNG" ><img src="figs/moo_voxel_01.PNG" width="100"></a>
@@ -42,7 +42,7 @@ A XCFramework for iOS and macOS to generate voxel, convex hull, etc. from MDLMes
 
 ## Output
 
-* MDLMesh that represents voxelized object (optionally with samploed colors)
+* MDLMesh that represents voxelized object (optionally with sampled colors)
 * Collision Balls for GPU-based collision detection
 * 3D Volume bitmap, where true bits represent the boundary or the inside of the sampled object.
 * Mass, center of mass, and the inertia tensor based on the sampled volume.
@@ -54,7 +54,7 @@ It should work for the recent Macs, iPhones, and iPads.
 It's been tested with the following devices and the tool chain.
 
 * Mac mini(M1, 2020) macOS Monterey 12.3.1
-* MacBook Pro (13-inch, 2017) macOS Monterey 12.3.1
+* MacBook Pro (Intel, 13-inch, 2017) macOS Monterey 12.3.1
 * iPhone 13 mini iOS 15.4.1
 * Xcode 13.3.1 (13E500a)
 
@@ -81,11 +81,11 @@ $ xcodebuild archive -scheme Voxcell -configuration Release -sdk macosx -archive
 $ xcodebuild -create-xcframework -framework './build/Voxcell.framework-iphoneos.xcarchive/Products/Library/Frameworks/Voxcell.framework' -framework './build/Voxcell.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/Voxcell.framework' -framework './build/Voxcell.framework-macos.xcarchive/Products/Library/Frameworks/Voxcell.framework' -output './build/Voxcell.xcframework'
 ```
 
-(Run `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer` first if it's not selected yet.)
+(Run `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer` first, if it's not selected yet.)
 
 ## Usage
 
-API Documentation is found [here](Voxcell/Voxcell/Voxcell.docc/Voxcell.md).
+API Documentation is found [here](API.md).
 
 
 ## Running the accompanying demo App.
@@ -99,15 +99,14 @@ Open `/path/to/your/repo/Voxcell/VoxcellDemo/VoxcellDemo.xcodeproj`, build and r
 
 **NOTE:**
 
-The 3D duck model is removed from this repo as its license prohibits distribution of in any readable forms.
+The 3D model duck is removed from this repo, as its license prohibits distribution in any readable form.
 
-The 3D cow model is provided by [Keenan Crane](https://www.cs.cmu.edu/~kmcrane/Projects/ModelRepository/) under CC0. 1.0.
-
+The 3D model cow is provided by [Keenan Crane](https://www.cs.cmu.edu/~kmcrane/Projects/ModelRepository/) under CC0. 1.0.
 
 ## Technical Stuff
 
 ### Depth Peeling in Metal
-The volume sampling is done by a technique called 'depth peeling' In OpenGL it is implemented using two Z-buffers alternatingly, which enable a function 'closest object but that is further than X' per pixel. This can not be implemented in Metal. However Metal has a nice ray-intersector, which can be used for depth peeling.
+The volume sampling is done by a technique called 'depth peeling'. In OpenGL it is implemented using two Z-buffers alternatingly, which enable a function 'closest object but that muss be further than X' per pixel. This can not be implemented in Metal. However Metal has a nice ray-intersector, which can be used for depth peeling.
 Please see 
 [VolumeSampler/DepthPeeler.swift](Voxcell/Voxcell/VolumeSampler/DepthPeeler.swift) and
 [VolumeSampler/DepthPeelerShaders.metal](Voxcell/Voxcell/VolumeSampler/DepthPeelerShaders.metal).
@@ -173,16 +172,13 @@ in  [./Voxcell.xcodeproj/project.pbxproj](Voxcell/Voxcell.xcodeproj/project.pbxp
 6. TARGETS -> Packaging -> Module Map File = module.modulemap (Ex. `buildSettings = {MODULEMAP_FILE = module.modulemap;}` in in  [./Voxcell.xcodeproj/project.pbxproj](Voxcell/Voxcell.xcodeproj/project.pbxproj) )
 
 
-
-
-
-
 ## License
 
 GPL v3.
 
-Open for commercial use.
-Especially for indy developers and small businesses MIT-type license can be readily considered.
+Commercial use with proper attribution can be considered.
+
+Especially, for indy developers and small businesses, a very favorable licensing can be readily arranged.
 
 ## Contact
 
