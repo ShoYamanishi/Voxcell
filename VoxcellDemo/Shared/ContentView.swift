@@ -140,7 +140,7 @@ struct ContentView: View {
 
             }
           case .ComInertia:
-            configText = "Center of Mass & Insertia (Eigen Vectors)"
+            configText = "Center of Mass & Inertia (Eigen Vectors)"
           case .Hull:
             switch hullType {
               case .ConvexHull:
